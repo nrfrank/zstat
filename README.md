@@ -5,6 +5,10 @@ Currently (02/21/17), the code has few comments and little documentation. It wil
 
 ## Current Methods
 
+### Required Packages
+ - BeautifulSoup
+ - requests
+
 ### basketball-reference.com Player Season Finder Scraper
 
 The code in `bbref_playerFinder_scraper.py` can be used to scrape the results from a search using the [Basketball Reference
