@@ -179,5 +179,16 @@ def get_search_results(url, filename):
 if __name__ == '__main__':
     # URL = 'http://www.basketball-reference.com/play-index/psl_finder.cgi?request=1&match=single&type=advanced&per_minute_base=36&per_poss_base=100&lg_id=NBA&is_playoffs=N&year_min=2005&year_max=2016&franch_id=&season_start=1&season_end=-1&age_min=0&age_max=99&shoot_hand=&height_min=0&height_max=99&birth_country_is=Y&birth_country=&birth_state=&college_id=&draft_year=&is_active=&debut_yr_aba_start=&debut_yr_aba_end=&debut_yr_nba_start=&debut_yr_nba_end=&is_hof=&is_as=&as_comp=gt&as_val=&award=&pos_is_g=Y&pos_is_gf=Y&pos_is_f=Y&pos_is_fg=Y&pos_is_fc=Y&pos_is_c=Y&pos_is_cf=Y&qual=&c1stat=&c1comp=gt&c1val=&c2stat=&c2comp=gt&c2val=&c3stat=&c3comp=gt&c3val=&c4stat=&c4comp=gt&c4val=&c5stat=&c5comp=gt&c6mult=1.0&c6stat=&order_by=player&order_by_asc=Y'
     # URL = 'http://www.sports-reference.com/cbb/play-index/psl_finder.cgi?request=1&match=single&year_min=2010&year_max=&conf_id=&school_id=&class_is_fr=Y&class_is_so=Y&class_is_jr=Y&class_is_sr=Y&pos_is_g=Y&pos_is_gf=Y&pos_is_fg=Y&pos_is_f=Y&pos_is_fc=Y&pos_is_cf=Y&pos_is_c=Y&games_type=A&qual=&c1stat=&c1comp=&c1val=&c2stat=&c2comp=&c2val=&c3stat=&c3comp=&c3val=&c4stat=&c4comp=&c4val=&order_by=per&order_by_asc='
-    URL = 'http://www.basketball-reference.com/play-index/psl_finder.cgi?request=1&match=single&type=advanced&per_minute_base=36&per_poss_base=100&lg_id=NBA&is_playoffs=N&year_min=2005&year_max=2016&franch_id=&season_start=1&season_end=-1&age_min=0&age_max=99&shoot_hand=&height_min=0&height_max=99&birth_country_is=Y&birth_country=&birth_state=&college_id=&draft_year=&is_active=&debut_yr_aba_start=&debut_yr_aba_end=&debut_yr_nba_start=&debut_yr_nba_end=&is_hof=&is_as=&as_comp=gt&as_val=&award=&pos_is_g=Y&pos_is_gf=Y&pos_is_f=Y&pos_is_fg=Y&pos_is_fc=Y&pos_is_c=Y&pos_is_cf=Y&qual=&c1stat=&c1comp=gt&c1val=&c2stat=&c2comp=gt&c2val=&c3stat=&c3comp=gt&c3val=&c4stat=&c4comp=gt&c4val=&c5stat=&c5comp=gt&c6mult=1.0&c6stat=&order_by=player&order_by_asc=Y'
+    URL = ("http://www.basketball-reference.com/play-index/psl_finder.cgi?request"
+           "=1&match=single&type=advanced&per_minute_base=36&per_poss_base=100&lg"
+           "_id=NBA&is_playoffs=N&year_min=2005&year_max=2016&franch_id=&season_"
+           "start=1&season_end=-1&age_min=0&age_max=99&shoot_hand=&height_min=0&"
+           "height_max=99&birth_country_is=Y&birth_country=&birth_state=&college"
+           "_id=&draft_year=&is_active=&debut_yr_aba_start=&debut_yr_aba_end=&"
+           "debut_yr_nba_start=&debut_yr_nba_end=&is_hof=&is_as=&as_comp=gt&"
+           "as_val=&award=&pos_is_g=Y&pos_is_gf=Y&pos_is_f=Y&pos_is_fg=Y&pos_is_fc"
+           "=Y&pos_is_c=Y&pos_is_cf=Y&qual=&c1stat=&c1comp=gt&c1val=&c2stat=&"
+           "c2comp=gt&c2val=&c3stat=&c3comp=gt&c3val=&c4stat=&c4comp=gt&c4val=&"
+           "c5stat=&c5comp=gt&c6mult=1.0&c6stat=&order_by=player&order_by_asc=Y"
+           )
     get_search_results(URL, 'bbref_data_test.csv')
